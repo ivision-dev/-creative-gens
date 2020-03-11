@@ -1,0 +1,254 @@
+{
+  "Model": [
+    {
+      "modelId": "151",
+      "modelName": "IMITATE_TEXTURE",
+      "maxInputsize": "12",
+      "maxImaegeSize": "4",
+      "inputImages": [
+        1,
+        2
+      ],
+      "outputImages": [
+        1,
+        2
+      ],
+      "id": 1
+    }
+  ],
+  "InputImagesDetails": [
+    {
+      "name": "ORIGINAL IMAGE",
+      "imagePath": "https://i.picsum.photos/id/180/200/200.jpg",
+      "id": 1
+    },
+    {
+      "name": "SEGMENTED IMAGE",
+      "imagePath": "image8.png",
+      "id": 2
+    },
+    {
+      "name": "ORIGINAL IMAGE",
+      "imagePath": "https://i.picsum.photos/id/180/200/200.jpg",
+      "id": 3
+    },
+    {
+      "name": "SEGMENTED IMAGE",
+      "imagePath": "image8.png",
+      "id": 4
+    },
+    {
+      "name": "ORIGINAL IMAGE",
+      "imagePath": "https://i.picsum.photos/id/180/200/200.jpg",
+      "id": 5
+    },
+    {
+      "name": "SEGMENTED IMAGE",
+      "imagePath": "image8.png",
+      "id": 6
+    },
+    {
+      "name": "ORIGINAL IMAGE",
+      "imagePath": "https://i.picsum.photos/id/1011/200/200.jpg",
+      "id": 7
+    },
+    {
+      "name": "SEGMENTED IMAGE",
+      "imagePath": "image8.png",
+      "id": 8
+    },
+    {
+      "name": "ORIGINAL IMAGE",
+      "imagePath": "https://i.picsum.photos/id/2/200/200.jpg",
+      "id": 9
+    },
+    {
+      "name": "SEGMENTED IMAGE",
+      "imagePath": "image8.png",
+      "id": 10
+    },
+    {
+      "name": "ORIGINAL IMAGE",
+      "imagePath": "https://i.picsum.photos/id/2/200/200.jpg",
+      "id": 11
+    },
+    {
+      "name": "SEGMENTED IMAGE",
+      "imagePath": "image8.png",
+      "id": 12
+    }
+  ],
+  "OutputImagesDetails": [],
+  "InputImagesType": [
+    {
+      "id": 1,
+      "name": "ORIGINAL IMAGE"
+    },
+    {
+      "id": 2,
+      "name": "SEGMENTED IMAGE"
+    },
+    {
+      "id": 3,
+      "name": "TEXTURE IMAGE"
+    },
+    {
+      "id": 4,
+      "name": "SKETCH IMAGE"
+    }
+  ],
+  "OutputImagesType": [
+    {
+      "id": 1,
+      "name": "INTERMIDATE IMAGE"
+    },
+    {
+      "id": 2,
+      "name": "FINAL IMAGE"
+    }
+  ],
+  "FAQ": [
+    {
+      "question": "AAA",
+      "answer": "SSS",
+      "modelId": "151",
+      "id": 1
+    }
+  ],
+  "Gallery": [
+    {
+      "id": 1,
+      "src": "https://i.picsum.photos/id/490/200/200.jpg",
+      "alt": "",
+      "tag": "kitchen"
+    },
+    {
+      "id": 2,
+      "src": "https://i.picsum.photos/id/1005/200/200.jpg",
+      "alt": "",
+      "tag": "man"
+    },
+    {
+      "id": 3,
+      "src": "https://i.picsum.photos/id/180/200/200.jpg",
+      "alt": "",
+      "tag": "laptop"
+    },
+    {
+      "id": 4,
+      "src": "https://i.picsum.photos/id/2/200/200.jpg",
+      "alt": "",
+      "tag": "laptop"
+    },
+    {
+      "id": 5,
+      "src": "https://i.picsum.photos/id/1003/200/200.jpg",
+      "alt": "",
+      "tag": "animal"
+    },
+    {
+      "id": 6,
+      "src": "https://i.picsum.photos/id/1025/200/200.jpg",
+      "alt": "",
+      "tag": "animal"
+    },
+    {
+      "id": 7,
+      "src": "https://i.picsum.photos/id/1012/200/200.jpg",
+      "alt": "",
+      "tag": "man"
+    },
+    {
+      "id": 8,
+      "src": "https://i.picsum.photos/id/1011/200/200.jpg",
+      "alt": "",
+      "tag": "woman"
+    },
+    {
+      "id": 9,
+      "src": "https://i.picsum.photos/id/1027/200/200.jpg",
+      "alt": "",
+      "tag": "woman"
+    },
+    {
+      "id": 10,
+      "src": "https://i.picsum.photos/id/1071/200/200.jpg",
+      "alt": "",
+      "tag": "car"
+    },
+    {
+      "id": 11,
+      "src": "https://i.picsum.photos/id/1072/200/200.jpg",
+      "alt": "",
+      "tag": "car"
+    }
+  ],
+  "OutputImages": [
+    {
+      "id": 1,
+      "src": "https://i.picsum.photos/id/1079/300/300.jpg",
+      "alt": "",
+      "tag": "other"
+    },
+    {
+      "id": 2,
+      "src": "https://i.picsum.photos/id/21/300/300.jpg",
+      "alt": "",
+      "tag": "sandal"
+    },
+    {
+      "id": 3,
+      "src": "https://i.picsum.photos/id/210/300/300.jpg",
+      "alt": "",
+      "tag": "wall"
+    },
+    {
+      "id": 4,
+      "src": "https://i.picsum.photos/id/201/200/200.jpg",
+      "alt": "",
+      "tag": "laptop"
+    },
+    {
+      "id": 5,
+      "src": "https://i.picsum.photos/id/1074/300/300.jpg",
+      "alt": "",
+      "tag": "animal"
+    },
+    {
+      "id": 6,
+      "src": "https://i.picsum.photos/id/1024/300/300.jpg",
+      "alt": "",
+      "tag": "animal"
+    },
+    {
+      "id": 7,
+      "src": "https://i.picsum.photos/id/22/300/300.jpg",
+      "alt": "",
+      "tag": "man"
+    },
+    {
+      "id": 8,
+      "src": "https://i.picsum.photos/id/258/300/300.jpg",
+      "alt": "",
+      "tag": "bird"
+    },
+    {
+      "id": 9,
+      "src": "https://i.picsum.photos/id/13/300/300.jpg",
+      "alt": "",
+      "tag": "other"
+    },
+    {
+      "id": 10,
+      "src": "https://i.picsum.photos/id/1070/300/300.jpg",
+      "alt": "",
+      "tag": "car"
+    },
+    {
+      "id": 11,
+      "src": "https://i.picsum.photos/id/111/300/300.jpg",
+      "alt": "",
+      "tag": "car"
+    }
+  ]
+}

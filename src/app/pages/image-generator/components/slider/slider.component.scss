@@ -1,0 +1,17 @@
+@import '../../../../../styles.scss';
+
+.image{
+    @include image-wrapper;
+    padding-bottom: 130%;
+        img{
+            @include image-ratio;
+        }
+}
+
+button{
+    color: $white-color;
+    box-shadow: none;
+    opacity: inherit;
+    text-shadow: none;
+    font-size: 16px;
+}       

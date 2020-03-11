@@ -1,0 +1,14 @@
+    <owl-carousel-o [options]="customOptions" #owlCat>
+        <ng-container *ngFor="let image of imagesData"   >
+          <ng-template carouselSlide  >
+            <div class="slide text-center" style="max-width: 250PX; ">
+              <div class="image-wrapper">
+                <img [src]="image.src" [alt]="image.alt" > 
+              </div>
+              <button class="button mt-3" (click)="selectGalleryImage(image.src)">
+                Select
+              </button>
+            </div>
+          </ng-template>
+        </ng-container>
+    </owl-carousel-o>

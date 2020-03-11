@@ -1,0 +1,258 @@
+@import '../../../styles.scss';
+
+.form .from-group .form-control.ng-invalid.ng-touched,
+.form .from-group textarea.ng-invalid.ng-touched{
+    border: 1px solid $danger;
+}
+.button[disabled]{
+    background: darken($bg-button, 5%);
+    color:$white-color;
+}
+.formwrap{ max-width: 480px; width: 480px; }
+.label{
+    margin-right: 20px;
+    text-align: right;
+    width: 180px;
+}
+// On Off CSS here 
+
+.onoffswitch {
+    position: relative; 
+    width: 45px;
+    -webkit-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid $primary; 
+    margin-bottom: 0;
+    border-radius: 21px;
+}
+.onoffswitch-inner {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 23px; 
+    padding: 0; 
+    font-size: 0;
+    line-height: 23px; 
+    color:$white-color; 
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 0px;
+    background-color: $primary;
+    color: $white-color;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 0px;
+    background-color: $primary;
+    color: $white-color;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; 
+    width: 23px; 
+    height: 23px;
+    margin: 1.5px;
+    background: $black-color;
+    position: absolute; 
+    top: 0; 
+    bottom: 0;
+    right: 19px;
+    border: 2px solid $primary; 
+    border-radius: 21px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+.logo{
+    img{
+        height: 78px;
+        width: 88px;
+    }
+}
+.form{
+    .from-group{
+        padding-bottom: 15px;
+            .form-control{
+                display: inline-block;
+                color: $primary;
+                background-color: $secondary;
+                border-radius: 0;
+                font-size: 15px;
+                text-transform: uppercase;
+                height: auto;
+                max-width: 210px;
+                padding: 2px 8px;
+                border: 1px solid $secondary;
+                
+                    &:focus{
+                        border-color: $primary;
+                        box-shadow: none;
+                    }
+            }
+            input::placeholder{
+                color: $primary;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .add-new-button{
+                font-size: 13px;
+                text-transform: uppercase;
+                background: transparent;
+                border: 0;
+                margin-left: 2px;
+                border-radius: 0;
+                color: $primary;
+            }
+            .add-new{   
+                padding: 0 20px;
+                background: $secondary;
+                
+                input{
+                    border: 1px solid darken($primary, 25%);
+                    padding-left: 6px;
+                    font-size: 13px;
+                    &::placeholder{
+                        color: darken($primary,10%);
+                        font-size: 12px;
+                    }
+                }
+            }
+            // .add-new{
+            //     ::before{
+            //         content:"\f067";
+
+            //     }
+            // }
+            button:focus{
+                outline: 0;
+            }
+            .dropdown-icon{
+                position: absolute;
+                right: 8px;
+                top: 4px;
+            }
+            .dropdown.show{
+                .primary-dropdown{
+                    margin-bottom: 6px;
+                }
+            }
+        
+            .dropdown{
+                position: relative;
+                .primary-dropdown{
+                    background: $secondary;
+                    color: $primary;
+                    border: 0;
+                    min-width: 245px;
+                    padding: 2px 15px;
+                    border-radius: 0;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    text-align: left;
+                }
+                .dropdown-menu.show{
+                    background: $secondary;
+                    display: contents;
+                }
+                .dropdown-menu{
+                    top:26px;
+                    background: $secondary;
+                    color: $primary;
+                    border-radius: 0;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    padding: 7px 8px;
+                    min-width: 210px;
+                    .custom-control-input:checked~.custom-control-label{
+                        &::before{
+                            color: $primary;
+                            content: '\2713';
+                            top: -4px;
+                            left: -19px;
+                            font-size: 20px;
+                            border-color: transparent;
+                            background-color: transparent;
+                        }
+                    }
+                    .custom-control{
+                       padding: 5px 0 5px 25px; 
+                       background: $secondary;
+                    }
+                    .custom-checkbox .custom-control-label{
+                        &::before{
+                            color: $primary;
+                            box-shadow: none;
+                            border: 0;
+                            background: transparent;
+                        }
+                    }
+                    .custom-control-label{
+                        &::after{
+                            position: absolute;
+                            top: 0;
+                            left: -29PX;
+                            display: block;
+                            width: 24px;
+                            background-image: none;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+    }
+    .sm-input{
+        width: 73px;
+    }
+    .xs-input{
+        width: 30px;
+    }
+    .image-size{
+        text-transform: uppercase;
+        color: $primary;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .faqs{
+        .plus-icon{
+            color: $primary;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        display: -webkit-box;
+        .label{
+            text-transform: initial;
+        }
+        input::placeholder{
+            font-size: 0;
+        }
+        .form-control{
+            display: block;
+            margin: 0;
+            font-size: 13px;
+            margin-right: 35px;
+            padding: 1px 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

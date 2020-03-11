@@ -1,0 +1,191 @@
+
+// Color Varibles here
+
+$primary: #379da9;
+$secondary: #171916;
+$black-color: #000;
+$white-color: #fff;
+$secondary-text: #485249;
+$bg-button: #354141;
+$danger: #AC3E31;
+
+// fonts
+
+@font-face{
+    font-family: Montserrat-Regular;
+    src: url(src/assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: Montserrat-Medium;
+    src: url(src/assets/fonts/Montserrat-Medium.ttf);
+}
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url(src/assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: Montserrat-SemiBold;
+    src: url(src/assets/fonts/Montserrat-SemiBold.ttf);
+}
+
+
+// background image function
+
+$baseUrl:'src/assets/images/';
+
+@function normalImg($Url){
+    @return url($baseUrl + $Url);
+}
+
+// Image ratio 
+
+@mixin image-ratio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@mixin image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* scrollbar  Handle */
+
+::-webkit-scrollbar-thumb {
+    background: darken($primary , 8%); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+html,body{
+    height: 100%;
+    position: relative;
+}
+::selection{
+    background: $primary;
+    color: $white-color;
+}
+input:focus{
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+body{
+    font-family: Montserrat-Regular;
+    min-height:100%;
+    background-size:cover;
+    background:linear-gradient(0deg, rgba($black-color, 80%), 
+               rgba($black-color, 80%)), 
+               normalImg('bg_image.png');
+}
+#main{
+    min-height: 100%;
+    min-height: 100vh; 
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 21px; 
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+.label{
+    text-transform: uppercase;
+    color: $white-color;
+    font-size: 15px;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.custom-control-label{
+    display: block;
+}
+.button{
+    background: $bg-button;
+    color: $primary;
+    border: 0;
+    font-size: 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 3px 20px;
+        &:hover{
+            background: darken($bg-button,10%);
+        }
+}
+button:focus{
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+// slider CSS here 
+
+.slider-images{
+    clear: both;
+    .owl-carousel.owl-drag {
+        
+        .owl-item{
+            text-align: center;
+            margin: 0 10px;
+        }
+    }
+}
+.owl-carousel{
+    margin-bottom: 40px;
+    .owl-dots.disabled,
+    .owl-nav.disabled{
+        display: block;
+        position: absolute;
+        top:32%;
+        margin-top: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        .owl-item{
+            text-align: center;
+            
+        }
+        .owl-prev{
+            left: 20px;  
+        }
+        .owl-next{
+            right: 20px;
+        }
+        .owl-next,
+        .owl-prev{
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            font-size: 33px;
+            font-weight: bold;
+            color: $primary;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            border: 2px solid $primary;
+            background-color: $secondary;
+        }
+        
+    }
+    .image-wrapper{
+        @include image-wrapper;
+        padding-bottom: 130%;
+            img{
+                @include image-ratio;
+            }
+    }
+    .slide{
+        margin: 0 auto;
+    }
+}

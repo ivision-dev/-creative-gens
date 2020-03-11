@@ -1,0 +1,26 @@
+@import '../../../../styles.scss';
+// @import '../../../..//second/second.component.scss';
+
+.form-control{
+    display: inline-block;
+    color: $primary;
+    background-color: $secondary;
+    border-radius: 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    height: auto;
+    max-width: 210px;
+    padding: 5px 28px;
+    border: 0;
+        &:focus{
+            border-color: $primary;
+            box-shadow: none;
+        }
+}
+
+.search-icon{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: $primary;
+}
